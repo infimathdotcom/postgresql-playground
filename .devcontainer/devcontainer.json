@@ -1,0 +1,15 @@
+{
+  "name": "postgres-playground",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "postgres",
+  "workspaceFolder": "/vscode",
+  "extensions": [
+	"ms-ossdata.vscode-postgresql"
+],
+  "settings": {
+    "terminal.integrated.shell.linux": null
+  },
+  "forwardPorts": [5432],
+  "postCreateCommand": "sleep 10 && psql -h localhost -U postgres -d postgres -p 5432",
+  "shutdownAction": "stopCompose"
+}
