@@ -2,10 +2,8 @@
   "name": "postgres-playground",
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "postgres",
-  "workspaceFolder": "/vscode",
-  "extensions": [
-	"ms-ossdata.vscode-postgresql"
-],
+  "workspaceFolder": "/home",
+  "extensions": [],
   "settings": {
     "terminal.integrated.shell.linux": null
   },
